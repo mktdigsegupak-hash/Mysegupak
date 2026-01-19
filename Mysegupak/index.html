@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segupak | Soluciones de Empaque Industrial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --segupak-blue: #2b2e49;
+            --segupak-accent: #4a90e2;
+            --white: #ffffff;
+            --bg-light: #f4f7fa;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
+
+        /* HEADER */
+        nav {
+            background-color: var(--segupak-blue);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            height: 60px; /* Tamaño ideal */
+            width: auto;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--segupak-accent); }
+
+        /* SECCIÓN HERO */
+        .hero {
+            background: linear-gradient(rgba(43, 46, 73, 0.8), rgba(43, 46, 73, 0.8)), 
+                        url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 80px 10%;
+        }
+
+        /* CONTENEDORES */
+        .section { padding: 60px 10%; }
+        .text-center { text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        /* CAJAS DE PRODUCTO / VIDEO */
+        .card { background: white; border-radius: 12px; border: 1px solid #ddd; overflow: hidden; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .card-body { padding: 20px; text-align: center; }
+
+        /* SÍMBOLO DE PROTECCIÓN */
+        .symbol-section {
+            background-color: var(--segupak-blue);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        /* WHATSAPP */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 2000;
+        }
+
+        footer { background: #1a1c2c; color: white; padding: 40px 10%; text-align: center; }
+        .social-icons a { color: white; font-size: 24px; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/595983103799" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Segupak Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Fechadoras</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <h1>LÍDER EN EMPAQUE INDUSTRIAL</h1>
+        <p>SEGUPAK es una empresa especializada en brindar sistemas de empaque industrial. Ofrecemos insumos, herramientas y máquinas con el fin de optimizar la seguridad y eficiencia del almacenamiento y transporte.</p>
+    </section>
+
+    <section class="section">
+        <div class="text-center">
+            <h2>Nuestra Misión y Visión</h2>
+            <p><strong>Visión:</strong> Revolucionar la forma tradicional de almacenamiento y transporte a través de nuestros sistemas de empaque seguro.</p>
+            <p><strong>Misión:</strong> Brindar sistemas de empaque seguro de manera íntegra y profesional, contribuyendo al progreso de nuestra comunidad.</p>
+        </div>
+
+        <div class="symbol-section">
+            <h3>Nuestro Símbolo de Protección</h3>
+            <p>El escudo pentagonal envuelto con nuestro nombre sobre tres bases tomando la forma de un pallet azul. El pentágono representa seguridad y el escudo simboliza protección. Las tres bases simbolizan nuestros valores: <strong>Integridad, Profesionalismo y Seguridad</strong>.</p>
+        </div>
+    </section>
+
+    <section class="section" id="productos" style="background: var(--bg-light);">
+        <h2 class="text-center">Fechadoras y Soluciones</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/AVMcACzT_N8" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h3>Manual (DY-8)</h3>
+                    <p>Máquina de impresión en caliente.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/vhumFeN2xho" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h3>Semiautomática (HP-280P)</h3>
+                    <p>Fechadora de cinta térmica.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/6isEEQH3jl0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h3>Pistola de Fechado (SC-12)</h3>
+                    <p>Codificadora Inkjet portátil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>Siguenos en nuestras redes sociales:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/Segupak-100069264153517/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/segupakpackagingpy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@segupaksa" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p style="margin-top: 20px;">© 2026 Segupak | Paraguay</p>
+    </footer>
+
+</body>
+</html>
